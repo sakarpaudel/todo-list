@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'screens/todo_list_screen.dart';
+import 'screens/settings_screen.dart';
 
 void main() {
   runApp(TodoListApp());
@@ -13,7 +14,11 @@ class TodoListApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: TodoListScreen(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => TodoListScreen(),
+        '/settings': (context) => SettingsScreen(),
+      },
     );
   }
 }
