@@ -16,6 +16,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Settings'),
+        centerTitle: true,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -24,7 +25,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
           children: <Widget>[
             Text(
               "Dark Mode",
-              style: TextStyle(fontSize: 18),
+              style: TextStyle(fontSize: 20),
             ),
             SizedBox(height: 8),
             CupertinoSwitch(
